@@ -14,6 +14,8 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - JXBWebKit (1.2.0)
+  - LEEAlert (1.4.1)
   - Masonry (1.1.0)
   - MJExtension (3.0.15.1)
   - MJRefresh (3.1.15.7)
@@ -21,6 +23,8 @@ PODS:
     - AFNetworking (~> 3.0)
 
 DEPENDENCIES:
+  - JXBWebKit (~> 1.2.0)
+  - LEEAlert
   - Masonry (~> 1.1.0)
   - MJExtension (~> 3.0.15.1)
   - MJRefresh (~> 3.1.15.3)
@@ -29,6 +33,8 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - AFNetworking
+    - JXBWebKit
+    - LEEAlert
     - Masonry
     - MJExtension
     - MJRefresh
@@ -36,11 +42,13 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  JXBWebKit: 170bd0fb1bbbb90edf1deffb772ed51dd3110cdd
+  LEEAlert: 808af2180ddde98f77f487ee29165673a45376bb
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
   MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
   YTKNetwork: df8a7a5597bda1664a4efaa7ef871a818a887fe0
 
-PODFILE CHECKSUM: 60da245379822c3b8bcf3dfe3d573a5cd758883c
+PODFILE CHECKSUM: f85f14ab5cd91aaea3397308308e1b116707dc12
 
 COCOAPODS: 1.10.0.beta.2

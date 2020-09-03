@@ -14,5 +14,10 @@ target 'QXMember' do
   pod 'YTKNetwork','~> 2.0.4'
 
   pod 'MJExtension','~> 3.0.15.1'
+  # WebKit
+  pod 'JXBWebKit', '~> 1.2.0'
+  # AlterView
+  pod 'LEEAlert'
+  
   
 end
