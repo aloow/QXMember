@@ -9,8 +9,42 @@
 #import "MembershipInterestsAlterView.h"
 #import <LEEAlert.h>
 
+@interface MembershipInterestsAlterView()
+
+//@property (weak, nonatomic) IBOutlet UILabel *scribingView;
+
+@end
+
+
 @implementation MembershipInterestsAlterView
 
+
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        [self initialization];
+    }
+    return self;
+}
+
+- (instancetype)initWithCoder:(NSCoder *)coder
+{
+    self = [super initWithCoder:coder];
+    if (self) {
+        [self initialization];
+    }
+    return self;
+}
+
+- (void)initialization {
+    
+    UIView *view = [[NSBundle mainBundle] loadNibNamed:@"MembershipInterestsAlterView"
+                                                 owner:self options:nil].firstObject;
+    self.frame = view.bounds;
+    [self addSubview:view];
+    
+}
 
 + (instancetype)instance {
     return [[[NSBundle mainBundle] loadNibNamed:@"MembershipInterestsAlterView"
@@ -30,31 +64,6 @@
 
 /*
  
- - (instancetype)initWithFrame:(CGRect)frame
- {
-     self = [super initWithFrame:frame];
-     if (self) {
-         [self initialization];
-     }
-     return self;
- }
-
- - (instancetype)initWithCoder:(NSCoder *)coder
- {
-     self = [super initWithCoder:coder];
-     if (self) {
-         [self initialization];
-     }
-     return self;
- }
-
- - (void)initialization {
-     
-     UIView *view = [[NSBundle mainBundle] loadNibNamed:@"MembershipInterestsAlterView"
-                                                  owner:self options:nil].firstObject;
-     self.frame = view.bounds;
-     [self addSubview:view];
-     
- }
+ 
  
  */

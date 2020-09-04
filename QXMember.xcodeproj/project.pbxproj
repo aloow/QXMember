@@ -15,6 +15,9 @@
 		8838AD4024FF2E1500A61075 /* SVIPMembersController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8838AD3E24FF2E1500A61075 /* SVIPMembersController.xib */; };
 		8838AD4625007B1400A61075 /* MembershipInterestsAlterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8838AD4525007B1400A61075 /* MembershipInterestsAlterView.m */; };
 		8838AD4925007B3000A61075 /* MembershipInterestsAlterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8838AD4825007B3000A61075 /* MembershipInterestsAlterView.xib */; };
+		8838AD4C2500BE0E00A61075 /* CALayer+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8838AD4B2500BE0E00A61075 /* CALayer+Extension.m */; };
+		8838AD842501F10000A61075 /* MemberCenterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8838AD822501F10000A61075 /* MemberCenterController.m */; };
+		8838AD852501F10000A61075 /* MemberCenterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8838AD832501F10000A61075 /* MemberCenterController.xib */; };
 		887F3C8324FDF2B700FDA334 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 887F3C8224FDF2B700FDA334 /* AppDelegate.m */; };
 		887F3C8624FDF2B700FDA334 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 887F3C8524FDF2B700FDA334 /* SceneDelegate.m */; };
 		887F3C8924FDF2B700FDA334 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 887F3C8824FDF2B700FDA334 /* ViewController.m */; };
@@ -45,6 +48,11 @@
 		8838AD4425007B1400A61075 /* MembershipInterestsAlterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MembershipInterestsAlterView.h; sourceTree = "<group>"; };
 		8838AD4525007B1400A61075 /* MembershipInterestsAlterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MembershipInterestsAlterView.m; sourceTree = "<group>"; };
 		8838AD4825007B3000A61075 /* MembershipInterestsAlterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MembershipInterestsAlterView.xib; sourceTree = "<group>"; };
+		8838AD4A2500BE0E00A61075 /* CALayer+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CALayer+Extension.h"; sourceTree = "<group>"; };
+		8838AD4B2500BE0E00A61075 /* CALayer+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Extension.m"; sourceTree = "<group>"; };
+		8838AD812501F10000A61075 /* MemberCenterController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemberCenterController.h; sourceTree = "<group>"; };
+		8838AD822501F10000A61075 /* MemberCenterController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemberCenterController.m; sourceTree = "<group>"; };
+		8838AD832501F10000A61075 /* MemberCenterController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MemberCenterController.xib; sourceTree = "<group>"; };
 		887F3C7E24FDF2B700FDA334 /* QXMember.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QXMember.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		887F3C8124FDF2B700FDA334 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		887F3C8224FDF2B700FDA334 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -105,6 +113,9 @@
 				8838AD3C24FF2E1500A61075 /* SVIPMembersController.h */,
 				8838AD3D24FF2E1500A61075 /* SVIPMembersController.m */,
 				8838AD3E24FF2E1500A61075 /* SVIPMembersController.xib */,
+				8838AD812501F10000A61075 /* MemberCenterController.h */,
+				8838AD822501F10000A61075 /* MemberCenterController.m */,
+				8838AD832501F10000A61075 /* MemberCenterController.xib */,
 				8838AD4725007B2000A61075 /* View */,
 			);
 			path = QXVip;
@@ -116,6 +127,8 @@
 				8838AD4425007B1400A61075 /* MembershipInterestsAlterView.h */,
 				8838AD4525007B1400A61075 /* MembershipInterestsAlterView.m */,
 				8838AD4825007B3000A61075 /* MembershipInterestsAlterView.xib */,
+				8838AD4A2500BE0E00A61075 /* CALayer+Extension.h */,
+				8838AD4B2500BE0E00A61075 /* CALayer+Extension.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -261,6 +274,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8838AD852501F10000A61075 /* MemberCenterController.xib in Resources */,
 				8838AD3624FF29D100A61075 /* VIPContrainerController.xib in Resources */,
 				8838AD4024FF2E1500A61075 /* SVIPMembersController.xib in Resources */,
 				887F3C9124FDF2B900FDA334 /* LaunchScreen.storyboard in Resources */,
@@ -320,7 +334,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8838AD842501F10000A61075 /* MemberCenterController.m in Sources */,
 				8838AD3524FF29D100A61075 /* VIPContrainerController.m in Sources */,
+				8838AD4C2500BE0E00A61075 /* CALayer+Extension.m in Sources */,
 				887F3CAB24FDF5E100FDA334 /* QXLoginSmsApi.m in Sources */,
 				887F3CA924FDF3D600FDA334 /* QXRespone.m in Sources */,
 				887F3CA824FDF3CF00FDA334 /* QXLoginGetSmsCode.m in Sources */,

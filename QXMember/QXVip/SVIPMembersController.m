@@ -9,6 +9,7 @@
 #import "SVIPMembersController.h"
 #import "VIPContrainerController.h"
 #import <JXBWebViewController.h>
+#import "MemberCenterController.h"
 
 @interface SVIPMembersController ()
 
@@ -36,5 +37,15 @@
     [self.parentViewController.navigationController pushViewController:webView animated:true];
     
 }
+
+- (IBAction)upgradeTap:(id)sender {
+    
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+    MemberCenterController * vc = [sb instantiateViewControllerWithIdentifier:@"MemberCenterController"];
+    
+    [self.navigationController pushViewController:vc animated:true];
+    
+}
+
 
 @end

@@ -63,26 +63,6 @@
 }
 
 
-- (void)addChildController {
-    
-    //
-    VIPMembersController *vipMembersController = [[VIPMembersController alloc]
-                                                  initWithNibName:@"VIPMembersController"
-                                                  bundle:[NSBundle mainBundle]];
-    [self addChildViewController:vipMembersController];
-    [self.containerStackView addArrangedSubview:vipMembersController.view];
-    [vipMembersController didMoveToParentViewController:self];
-
-    //
-    SVIPMembersController *svipMembersController = [[SVIPMembersController alloc]
-                                                  initWithNibName:@"SVIPMembersController"
-                                                  bundle:[NSBundle mainBundle]];
-    [self addChildViewController:svipMembersController];
-    [self.containerStackView addArrangedSubview:svipMembersController.view];
-    [svipMembersController didMoveToParentViewController:self];
-    
-}
-
 // MARK: Add Remove
 - (void)add:(UIViewController *)controler with:(UIView *)view {
     // Add the view controller to the container.

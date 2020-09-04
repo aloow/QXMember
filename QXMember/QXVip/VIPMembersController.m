@@ -43,8 +43,10 @@ const CGFloat QMUIViewSelfSizingHeight = INFINITY;
 
 - (IBAction)InviteTap:(id)sender {
     
-    MembershipInterestsAlterView *view = [MembershipInterestsAlterView instance];
+//    MembershipInterestsAlterView *view = [MembershipInterestsAlterView instance];
 
+    MembershipInterestsAlterView *view = [[MembershipInterestsAlterView alloc] init];
+    
     [LEEAlert actionsheet].config
     .LeeCustomView(view)
     .LeeHeaderInsets(UIEdgeInsetsMake(0, 0, 0, 0))
