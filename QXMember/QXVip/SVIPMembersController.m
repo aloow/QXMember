@@ -40,8 +40,10 @@
 
 - (IBAction)upgradeTap:(id)sender {
     
-    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
-    MemberCenterController * vc = [sb instantiateViewControllerWithIdentifier:@"MemberCenterController"];
+//    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+//    MemberCenterController * vc = [sb instantiateViewControllerWithIdentifier:@"MemberCenterController"];
+    
+    MemberCenterController * vc = [[MemberCenterController alloc] init];
     
     [self.navigationController pushViewController:vc animated:true];
     

@@ -51,7 +51,7 @@
     NSString *code = self.code.text;
     if (code.length > 0) {
         
-        QXLoginSmsApi *api = [[QXLoginSmsApi alloc] initWithUsername:code smsCaptcha:@""];
+        QXLoginSmsApi *api = [[QXLoginSmsApi alloc] initWithUsername:code smsCaptcha:code];
         
         [api startWithCompletionBlockWithSuccess:^(YTKBaseRequest *request) {
             // NSLog(@"succeed");
