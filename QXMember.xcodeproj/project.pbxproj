@@ -115,17 +115,8 @@
 		8838AD3124FF28FB00A61075 /* QXVip */ = {
 			isa = PBXGroup;
 			children = (
-				8838AD3224FF29D100A61075 /* VIPContrainerController.h */,
-				8838AD3324FF29D100A61075 /* VIPContrainerController.m */,
-				8838AD3424FF29D100A61075 /* VIPContrainerController.xib */,
-				8838AD3724FF2DFB00A61075 /* VIPMembersController.h */,
-				8838AD3824FF2DFB00A61075 /* VIPMembersController.m */,
-				8838AD3924FF2DFB00A61075 /* VIPMembersController.xib */,
-				8838AD3C24FF2E1500A61075 /* SVIPMembersController.h */,
-				8838AD3D24FF2E1500A61075 /* SVIPMembersController.m */,
-				8838AD3E24FF2E1500A61075 /* SVIPMembersController.xib */,
-				8838AD812501F10000A61075 /* MemberCenterController.h */,
-				8838AD822501F10000A61075 /* MemberCenterController.m */,
+				8899A42E25070A9600CED478 /* Controller */,
+				8899A42F25070A9600CED478 /* Model */,
 				8838AD4725007B2000A61075 /* View */,
 			);
 			path = QXVip;
@@ -134,6 +125,9 @@
 		8838AD4725007B2000A61075 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8838AD3424FF29D100A61075 /* VIPContrainerController.xib */,
+				8838AD3924FF2DFB00A61075 /* VIPMembersController.xib */,
+				8838AD3E24FF2E1500A61075 /* SVIPMembersController.xib */,
 				8838AD4425007B1400A61075 /* MembershipInterestsAlterView.h */,
 				8838AD4525007B1400A61075 /* MembershipInterestsAlterView.m */,
 				8838AD4825007B3000A61075 /* MembershipInterestsAlterView.xib */,
@@ -222,6 +216,28 @@
 				887F3CA524FDF2CA00FDA334 /* QXBaseRequest.m */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		8899A42E25070A9600CED478 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8838AD3224FF29D100A61075 /* VIPContrainerController.h */,
+				8838AD3324FF29D100A61075 /* VIPContrainerController.m */,
+				8838AD3724FF2DFB00A61075 /* VIPMembersController.h */,
+				8838AD3824FF2DFB00A61075 /* VIPMembersController.m */,
+				8838AD3C24FF2E1500A61075 /* SVIPMembersController.h */,
+				8838AD3D24FF2E1500A61075 /* SVIPMembersController.m */,
+				8838AD812501F10000A61075 /* MemberCenterController.h */,
+				8838AD822501F10000A61075 /* MemberCenterController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8899A42F25070A9600CED478 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		8B6FAF46720A51C6A8751A83 /* Pods */ = {
