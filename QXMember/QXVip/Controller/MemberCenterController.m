@@ -10,6 +10,7 @@
 #import "MemberCenterCell.h"
 #import "MemberCenterHeaderView.h"
 #import <Masonry/Masonry.h>
+#import <YYCategories/YYCategories.h>
 
 @interface MemberCenterController () <UITableViewDelegate,UITableViewDataSource>
 
@@ -46,7 +47,19 @@
     }];
     
     MemberCenterHeaderView *headerView = [[MemberCenterHeaderView alloc] init];
+    [headerView setUserInteractionEnabled:YES];
+    
+    [headerView setAutoresizingMask:UIViewAutoresizingNone];
+    
     self.tableView.tableHeaderView = headerView;
+    [self.tableView.tableHeaderView setUserInteractionEnabled:YES];
+    
+    headerView.clickAction = ^{
+        NSLog(@"点击商铺");
+    };
+    [headerView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.width.equalTo(self.view.mas_width);
+    }];
     
 }
 

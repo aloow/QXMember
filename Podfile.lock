@@ -14,41 +14,51 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
-  - JXBWebKit (1.2.0)
+  - JXBWebKit (1.2.1)
+  - JXCategoryView (1.5.6)
   - LEEAlert (1.4.1)
   - Masonry (1.1.0)
   - MJExtension (3.0.15.1)
   - MJRefresh (3.1.15.7)
   - YTKNetwork (2.0.4):
     - AFNetworking (~> 3.0)
+  - YYCategories (1.0.4):
+    - YYCategories/no-arc (= 1.0.4)
+  - YYCategories/no-arc (1.0.4)
 
 DEPENDENCIES:
   - JXBWebKit (~> 1.2.0)
+  - JXCategoryView
   - LEEAlert
   - Masonry (~> 1.1.0)
   - MJExtension (~> 3.0.15.1)
   - MJRefresh (~> 3.1.15.3)
   - YTKNetwork (~> 2.0.4)
+  - YYCategories
 
 SPEC REPOS:
   trunk:
     - AFNetworking
     - JXBWebKit
+    - JXCategoryView
     - LEEAlert
     - Masonry
     - MJExtension
     - MJRefresh
     - YTKNetwork
+    - YYCategories
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  JXBWebKit: 170bd0fb1bbbb90edf1deffb772ed51dd3110cdd
+  JXBWebKit: 9b8c67238e11371c5a91bf55ecd316df7ac84ca6
+  JXCategoryView: 603ccd8277a89b1a73e9cedb9d8ed4b294576008
   LEEAlert: 808af2180ddde98f77f487ee29165673a45376bb
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
   MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
   YTKNetwork: df8a7a5597bda1664a4efaa7ef871a818a887fe0
+  YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
 
-PODFILE CHECKSUM: f85f14ab5cd91aaea3397308308e1b116707dc12
+PODFILE CHECKSUM: dffc6bc52d92f6cfb308a91a6b37965e60a46411
 
 COCOAPODS: 1.10.0.beta.2

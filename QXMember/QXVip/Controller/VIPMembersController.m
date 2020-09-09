@@ -11,6 +11,7 @@
 #import <JXBWebViewController.h>
 #import "MembershipInterestsAlterView.h"
 #import <LEEAlert.h>
+#import "IncomeDetailController.h"
 
 @interface VIPMembersController ()
 
@@ -43,19 +44,21 @@ const CGFloat QMUIViewSelfSizingHeight = INFINITY;
 
 - (IBAction)InviteTap:(id)sender {
     
-//    MembershipInterestsAlterView *view = [MembershipInterestsAlterView instance];
-
-    MembershipInterestsAlterView *view = [[MembershipInterestsAlterView alloc] init];
+    // 弹窗
+//    MembershipInterestsAlterView *view = [[MembershipInterestsAlterView alloc] init];
+//
+//    [LEEAlert actionsheet].config
+//    .LeeCustomView(view)
+//    .LeeHeaderInsets(UIEdgeInsetsMake(0, 0, 0, 0))
+//    .LeeActionSheetBackgroundColor([UIColor whiteColor])
+//    .LeeCornerRadius(10.0f)
+//    .LeeActionSheetHeaderCornerRadii(CornerRadiiMake(0, 0, 0, 0))
+//    .LeeMaxWidth([UIScreen mainScreen].bounds.size.width)
+//    .LeeShow();
     
-    [LEEAlert actionsheet].config
-    .LeeCustomView(view)
-    .LeeHeaderInsets(UIEdgeInsetsMake(0, 0, 0, 0))
-    .LeeActionSheetBackgroundColor([UIColor whiteColor])
-    .LeeCornerRadius(10.0f)
-    .LeeActionSheetHeaderCornerRadii(CornerRadiiMake(0, 0, 0, 0))
-    .LeeMaxWidth([UIScreen mainScreen].bounds.size.width)
-    .LeeShow();
-    
+    // 收入明细
+    IncomeDetailController *incomeDetailController = [[IncomeDetailController alloc] init];
+    [self.navigationController pushViewController:incomeDetailController animated:YES];
     
 }
 

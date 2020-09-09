@@ -10,7 +10,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef void(^ClickAction)(void);
+
 @interface MemberCenterHeaderView : UIView
+
+@property (nonatomic, copy) void(^clickAction)(void);
 
 @end
 

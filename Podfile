@@ -18,6 +18,9 @@ target 'QXMember' do
   pod 'JXBWebKit', '~> 1.2.0'
   # AlterView
   pod 'LEEAlert'
-  
+  # 分类
+  pod 'YYCategories'
+  # 标签滚动
+  pod 'JXCategoryView' , '~> 1.5.6'
   
 end

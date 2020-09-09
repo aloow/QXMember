@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8818275725086C5F00ED04A8 /* IncomeDetailListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8818275625086C5F00ED04A8 /* IncomeDetailListController.m */; };
 		881935A725060BC200E096BB /* ApiCollector.m in Sources */ = {isa = PBXBuildFile; fileRef = 881935A625060BC200E096BB /* ApiCollector.m */; };
 		881935AD25060ED300E096BB /* MemberCenterHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 881935AC25060ED300E096BB /* MemberCenterHeaderView.m */; };
 		881935AF25060EE000E096BB /* MemberCenterHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 881935AE25060EE000E096BB /* MemberCenterHeaderView.xib */; };
@@ -22,6 +23,7 @@
 		8838AD4925007B3000A61075 /* MembershipInterestsAlterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8838AD4825007B3000A61075 /* MembershipInterestsAlterView.xib */; };
 		8838AD4C2500BE0E00A61075 /* CALayer+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8838AD4B2500BE0E00A61075 /* CALayer+Extension.m */; };
 		8838AD842501F10000A61075 /* MemberCenterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8838AD822501F10000A61075 /* MemberCenterController.m */; };
+		8865E1B5250718BE002675BC /* IncomeDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8865E1B4250718BE002675BC /* IncomeDetailController.m */; };
 		887F3C8324FDF2B700FDA334 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 887F3C8224FDF2B700FDA334 /* AppDelegate.m */; };
 		887F3C8624FDF2B700FDA334 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 887F3C8524FDF2B700FDA334 /* SceneDelegate.m */; };
 		887F3C8924FDF2B700FDA334 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 887F3C8824FDF2B700FDA334 /* ViewController.m */; };
@@ -40,6 +42,8 @@
 
 /* Begin PBXFileReference section */
 		6E513B0FAAEB3669C5D4FD1F /* Pods-QXMember.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QXMember.release.xcconfig"; path = "Target Support Files/Pods-QXMember/Pods-QXMember.release.xcconfig"; sourceTree = "<group>"; };
+		8818275525086C5F00ED04A8 /* IncomeDetailListController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IncomeDetailListController.h; sourceTree = "<group>"; };
+		8818275625086C5F00ED04A8 /* IncomeDetailListController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IncomeDetailListController.m; sourceTree = "<group>"; };
 		881935A525060BC200E096BB /* ApiCollector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApiCollector.h; sourceTree = "<group>"; };
 		881935A625060BC200E096BB /* ApiCollector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApiCollector.m; sourceTree = "<group>"; };
 		881935AB25060ED300E096BB /* MemberCenterHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemberCenterHeaderView.h; sourceTree = "<group>"; };
@@ -64,6 +68,8 @@
 		8838AD4B2500BE0E00A61075 /* CALayer+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Extension.m"; sourceTree = "<group>"; };
 		8838AD812501F10000A61075 /* MemberCenterController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemberCenterController.h; sourceTree = "<group>"; };
 		8838AD822501F10000A61075 /* MemberCenterController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemberCenterController.m; sourceTree = "<group>"; };
+		8865E1B3250718BE002675BC /* IncomeDetailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IncomeDetailController.h; sourceTree = "<group>"; };
+		8865E1B4250718BE002675BC /* IncomeDetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IncomeDetailController.m; sourceTree = "<group>"; };
 		887F3C7E24FDF2B700FDA334 /* QXMember.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QXMember.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		887F3C8124FDF2B700FDA334 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		887F3C8224FDF2B700FDA334 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -229,6 +235,10 @@
 				8838AD3D24FF2E1500A61075 /* SVIPMembersController.m */,
 				8838AD812501F10000A61075 /* MemberCenterController.h */,
 				8838AD822501F10000A61075 /* MemberCenterController.m */,
+				8865E1B3250718BE002675BC /* IncomeDetailController.h */,
+				8865E1B4250718BE002675BC /* IncomeDetailController.m */,
+				8818275525086C5F00ED04A8 /* IncomeDetailListController.h */,
+				8818275625086C5F00ED04A8 /* IncomeDetailListController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -370,9 +380,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				881935AD25060ED300E096BB /* MemberCenterHeaderView.m in Sources */,
+				8865E1B5250718BE002675BC /* IncomeDetailController.m in Sources */,
 				8838AD842501F10000A61075 /* MemberCenterController.m in Sources */,
 				8838AD3524FF29D100A61075 /* VIPContrainerController.m in Sources */,
 				8838AD4C2500BE0E00A61075 /* CALayer+Extension.m in Sources */,
+				8818275725086C5F00ED04A8 /* IncomeDetailListController.m in Sources */,
 				887F3CAB24FDF5E100FDA334 /* QXLoginSmsApi.m in Sources */,
 				887F3CA924FDF3D600FDA334 /* QXRespone.m in Sources */,
 				881935A725060BC200E096BB /* ApiCollector.m in Sources */,
