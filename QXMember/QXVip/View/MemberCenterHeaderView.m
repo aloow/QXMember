@@ -11,34 +11,6 @@
 
 @implementation MemberCenterHeaderView
 
-- (instancetype)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        [self initialization];
-    }
-    return self;
-}
-
-- (instancetype)initWithCoder:(NSCoder *)coder
-{
-    self = [super initWithCoder:coder];
-    if (self) {
-        [self initialization];
-    }
-    return self;
-}
-
-- (void)initialization {
-    
-    UIView *view = [[NSBundle mainBundle] loadNibNamed:@"MemberCenterHeaderView"
-                                                 owner:self options:nil].firstObject;
-    view.width = [UIScreen mainScreen].bounds.size.width;
-    self.frame = view.bounds;
-    [self addSubview:view];
-    [self setUserInteractionEnabled:YES];
-    
-}
 
 // MARK: User Touch
 - (IBAction)clickShop:(id)sender {
@@ -49,6 +21,7 @@
     }
     
 }
+
 - (IBAction)touch:(id)sender {
     
     NSLog(@"touch");

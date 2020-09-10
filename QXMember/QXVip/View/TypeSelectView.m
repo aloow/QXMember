@@ -40,45 +40,16 @@
 @property (nonatomic, assign) NSInteger selectTimeIndex;
 @property (nonatomic, assign) NSInteger selectTypeIndex;
 
-
-
 @end
 
 
 @implementation TypeSelectView
 
-- (instancetype)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        [self initialization];
-    }
-    return self;
-}
-
-- (instancetype)initWithCoder:(NSCoder *)coder
-{
-    self = [super initWithCoder:coder];
-    if (self) {
-        [self initialization];
-    }
-    return self;
-}
-
-- (void)initialization {
-    
-    UIView *view = [[NSBundle mainBundle] loadNibNamed:@"TypeSelectView"
-                                                 owner:self options:nil].firstObject;
-    self.frame = view.bounds;
-    [self addSubview:view];
-    [self setup];
-}
-
-- (void)setup {
-    
+- (void)setupView {
     [self.collectionView registerClass:[MenuCollectionCell class]
             forCellWithReuseIdentifier:@"menucell"];
     [self.collectionView reloadData];
+    self.backgroundColor = UIColor.clearColor;
 }
 
 // MARK: - UICollectionViewDataSource
@@ -129,8 +100,6 @@
 {
     return 5.f;
 }
-
-
 
 
 // MARK: - UICollectionViewDelegate

@@ -1,16 +1,16 @@
 //
-//  TestMyView.h
+//  IncomeDetailsController.h
 //  QXMember
 //
 //  Created by iMac on 2020/9/10.
 //  Copyright © 2020 iMac. All rights reserved.
 //
 
-#import "BaseXibView.h"
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TestMyView : BaseXibView
+@interface IncomeDetailsController : UIViewController
 
 @end
 

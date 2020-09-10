@@ -6,13 +6,13 @@
 //  Copyright © 2020 iMac. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BaseXibView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 typedef void(^ClickAction)(void);
 
-@interface MemberCenterHeaderView : UIView
+@interface MemberCenterHeaderView : BaseXibView
 
 @property (nonatomic, copy) void(^clickAction)(void);
 

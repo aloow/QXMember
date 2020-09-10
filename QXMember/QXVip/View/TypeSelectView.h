@@ -6,7 +6,7 @@
 //  Copyright © 2020 iMac. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BaseXibView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 // MARK: MenuCollectionCell
@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 // MARK: TypeSelectView
-@interface TypeSelectView : UIView
+@interface TypeSelectView : BaseXibView
 
 @end
 

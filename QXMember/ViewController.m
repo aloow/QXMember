@@ -11,7 +11,7 @@
 #import "QXLoginSmsApi.h"
 #import "QXFetchUserInfo.h"
 #import "VIPContrainerController.h"
-#import "IncomeDetailController.h"
+#import "IncomeDetailsController.h"
 
 @interface ViewController ()
 
@@ -89,8 +89,11 @@
 
     
     // 收入明细
-    IncomeDetailController *incomeDetailController = [[IncomeDetailController alloc] init];
-    [self.navigationController pushViewController:incomeDetailController animated:YES];
+    IncomeDetailsController *incomeDetailsController = [[IncomeDetailsController alloc]
+                                                        initWithNibName:@"IncomeDetailsController"
+                                                        bundle:[NSBundle mainBundle]];
+    [self.navigationController pushViewController:incomeDetailsController animated:true];
+    
     
 }
 

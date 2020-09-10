@@ -11,7 +11,6 @@
 #import <JXBWebViewController.h>
 #import "MembershipInterestsAlterView.h"
 #import <LEEAlert.h>
-#import "IncomeDetailController.h"
 
 @interface VIPMembersController ()
 
@@ -57,8 +56,6 @@ const CGFloat QMUIViewSelfSizingHeight = INFINITY;
 //    .LeeShow();
     
     // 收入明细
-    IncomeDetailController *incomeDetailController = [[IncomeDetailController alloc] init];
-    [self.navigationController pushViewController:incomeDetailController animated:YES];
     
 }
 
