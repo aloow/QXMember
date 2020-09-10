@@ -9,6 +9,10 @@
 #import "IncomeDetailController.h"
 #import "IncomeDetailListController.h"
 #import <YYCategories/YYCategories.h>
+#import "TypeSelectView.h"
+#import <Masonry/Masonry.h>
+#import "TestMyView.h"
+
 
 @interface IncomeDetailController ()<JXCategoryViewDelegate, JXCategoryListContainerViewDelegate>
 
@@ -16,7 +20,11 @@
 
 @property (nonatomic, strong) JXCategoryTitleView *categoryView;
 
+@property (nonatomic, strong) TypeSelectView *tsView;
+
 @property (nonatomic, strong) JXCategoryListContainerView *listContainerView;
+
+@property (nonatomic, strong) TestMyView *tview;
 
 @end
 
@@ -27,9 +35,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [self setupCategory];
+    self.view.backgroundColor = UIColor.whiteColor;
     
-    [self setupCategoryListContainerView];
+    [self setupCategory];
+    [self setupSelectView];
+//    [self setupCategoryListContainerView];
     
 }
 
@@ -50,19 +60,20 @@
 // MARK:Set up view
 - (void)setupCategory {
     //
-    self.titles = @[@"全部", @"待付款", @"已付款",@"已结算",@"已失效"];
+    self.titles = @[@"全部", @"待付款", @"已付款",@"已结算",@"已失效",];
     
-    self.categoryView = [[JXCategoryTitleView alloc]
-                         initWithFrame:CGRectMake(0, 88, self.view.frame.size.width, 50)];
+    self.categoryView = [[JXCategoryTitleView alloc] init];
     self.categoryView.delegate = self;
     [self.view addSubview:self.categoryView];
     
+    self.categoryView.averageCellSpacingEnabled = YES;
     self.categoryView.titles = self.titles;
     self.categoryView.backgroundColor = UIColor.whiteColor;
     self.categoryView.titleColorGradientEnabled = YES;
     self.categoryView.titleFont = [UIFont systemFontOfSize:16];
     self.categoryView.titleSelectedColor = UIColor.blackColor;
     self.categoryView.titleSelectedFont = [UIFont fontWithName:@"Helvetica-Bold" size:16];
+    
     // 添加指示器
     JXCategoryIndicatorLineView *lineView = [[JXCategoryIndicatorLineView alloc] init];
     lineView.indicatorWidth = 20;
@@ -71,23 +82,62 @@
     lineView.indicatorWidth = JXCategoryViewAutomaticDimension;
     self.categoryView.indicators = @[lineView];
     
+    
+}
+
+// 时间 类型 选择View
+- (void)setupSelectView {
+
+//    self.tsView = [[TypeSelectView alloc] init];
+////    [self.view addSubview:self.tsView];
+//    [self.view insertSubview:self.tsView belowSubview:self.categoryView];
+    
+    self.tview = [[TestMyView alloc] init];
+    [self.view addSubview:self.tview];
+    
+    
 }
 
 - (void)setupCategoryListContainerView {
     
     self.listContainerView = [[JXCategoryListContainerView alloc]
                               initWithType:JXCategoryListContainerType_ScrollView delegate:self];
-    [self.view addSubview:self.listContainerView];
+//    [self.view insertSubview:self.listContainerView belowSubview:self.tsView];
+//    [self.view addSubview:self.listContainerView];
     //关联到categoryView
     self.categoryView.listContainer = self.listContainerView;
     
 }
 
+//MARK: 布局 view
 - (void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
     
-    self.categoryView.frame = CGRectMake(0, 88, self.view.bounds.size.width, 50);
-    self.listContainerView.frame = CGRectMake(0, 88+50, self.view.bounds.size.width, self.view.bounds.size.height);
+    [self.categoryView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.equalTo(self.view);
+        if (@available(iOS 11.0, *)) {
+            make.top.equalTo(self.view.mas_safeAreaLayoutGuideTop);
+        } else {
+            make.top.equalTo(self.view.mas_top);
+        }
+        make.height.mas_equalTo(50);
+    }];
+    [self.categoryView refreshState];// 防止categoryView不能铺满整行
+    
+    [self.tview mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.bottom.equalTo(self.view);
+        make.top.equalTo(self.categoryView.mas_bottom);
+    }];
+//    [self.tsView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.left.right.bottom.equalTo(self.view);
+//        make.top.equalTo(self.categoryView.mas_bottom);
+//    }];
+    
+//    [self.listContainerView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.left.right.bottom.equalTo(self.view);
+//        make.top.equalTo(self.categoryView.mas_bottom).offset(40);
+//    }];
+    
 }
 
 #pragma mark - JXCategoryViewDelegate

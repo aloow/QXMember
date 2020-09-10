@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TypeSelectView">
+            <connections>
+                <outlet property="collectionView" destination="SCC-BD-OV8" id="a9B-2b-fSW"/>
+                <outlet property="timeLabel" destination="kdJ-8N-TWQ" id="Abh-Zb-5cI"/>
+                <outlet property="typeLabel" destination="IOO-HL-KuV" id="Jxb-tG-mWM"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="697"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="40" translatesAutoresizingMaskIntoConstraints="NO" id="NVZ-70-jPh">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6hv-pM-DnE">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="1"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="lp2-Es-Dcu"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G6D-aP-Mp7">
+                            <rect key="frame" x="0.0" y="39" width="414" height="1"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="91P-69-DSQ"/>
+                            </constraints>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="1AS-ab-kjT">
+                            <rect key="frame" x="292" y="12" width="37" height="16"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="类型" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IOO-HL-KuV">
+                                    <rect key="frame" x="0.0" y="0.0" width="27" height="16"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vip_Incomedetails_up" translatesAutoresizingMaskIntoConstraints="NO" id="doX-uy-sgM">
+                                    <rect key="frame" x="32" y="6.5" width="5" height="3"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="3" id="f1a-6f-p6H"/>
+                                        <constraint firstAttribute="width" secondItem="doX-uy-sgM" secondAttribute="height" multiplier="5:3" id="jlW-fn-UA1"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="PPj-3s-Ngh">
+                            <rect key="frame" x="85" y="12" width="37" height="16"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="时间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kdJ-8N-TWQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="27" height="16"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                    <color key="textColor" red="0.94347560409999998" green="0.61847656969999998" blue="0.2335387766" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vip_Incomedetails_up" translatesAutoresizingMaskIntoConstraints="NO" id="nqE-Fd-Cvi">
+                                    <rect key="frame" x="32" y="6.5" width="5" height="3"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="3" id="DYm-2t-6NK"/>
+                                        <constraint firstAttribute="width" secondItem="nqE-Fd-Cvi" secondAttribute="height" multiplier="5:3" id="RJi-yY-iAt"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="1AS-ab-kjT" firstAttribute="centerX" secondItem="NVZ-70-jPh" secondAttribute="centerX" multiplier="3/2" id="NSQ-Ij-wRy"/>
+                        <constraint firstItem="PPj-3s-Ngh" firstAttribute="centerY" secondItem="NVZ-70-jPh" secondAttribute="centerY" id="TRH-Ac-lLn"/>
+                        <constraint firstItem="PPj-3s-Ngh" firstAttribute="centerX" secondItem="NVZ-70-jPh" secondAttribute="centerX" multiplier="1/2" id="X0Y-hX-mum"/>
+                        <constraint firstAttribute="trailing" secondItem="G6D-aP-Mp7" secondAttribute="trailing" id="aEh-gp-vJk"/>
+                        <constraint firstAttribute="trailing" secondItem="6hv-pM-DnE" secondAttribute="trailing" id="al3-Oh-qBF"/>
+                        <constraint firstItem="6hv-pM-DnE" firstAttribute="top" secondItem="NVZ-70-jPh" secondAttribute="top" id="dgm-n2-EcN"/>
+                        <constraint firstAttribute="bottom" secondItem="G6D-aP-Mp7" secondAttribute="bottom" id="iFt-6Y-uX8"/>
+                        <constraint firstItem="6hv-pM-DnE" firstAttribute="leading" secondItem="NVZ-70-jPh" secondAttribute="leading" id="iUJ-WQ-WG6"/>
+                        <constraint firstAttribute="height" constant="40" id="jY7-A4-TC8"/>
+                        <constraint firstItem="G6D-aP-Mp7" firstAttribute="leading" secondItem="NVZ-70-jPh" secondAttribute="leading" id="u9S-80-kFk"/>
+                        <constraint firstItem="1AS-ab-kjT" firstAttribute="centerY" secondItem="NVZ-70-jPh" secondAttribute="centerY" id="vJK-iI-cJK"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="SCC-BD-OV8">
+                    <rect key="frame" x="0.0" y="40" width="414" height="657"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="evb-ua-jF5">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="pSD-x2-Nn0"/>
+                        <outlet property="delegate" destination="-1" id="X0j-Lf-ZuN"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="SCC-BD-OV8" secondAttribute="bottom" id="HTp-Sy-ql5"/>
+                <constraint firstItem="NVZ-70-jPh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="N64-EM-wad"/>
+                <constraint firstItem="SCC-BD-OV8" firstAttribute="top" secondItem="NVZ-70-jPh" secondAttribute="bottom" id="SVa-zv-hQ2"/>
+                <constraint firstAttribute="trailing" secondItem="SCC-BD-OV8" secondAttribute="trailing" id="VXJ-9c-kXx"/>
+                <constraint firstAttribute="trailing" secondItem="NVZ-70-jPh" secondAttribute="trailing" id="dL1-7K-7le"/>
+                <constraint firstItem="NVZ-70-jPh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ezr-km-BAB"/>
+                <constraint firstItem="SCC-BD-OV8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="itV-JN-TrB"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="149.27536231884059" y="86.049107142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="vip_Incomedetails_up" width="5" height="3"/>
+    </resources>
+</document>

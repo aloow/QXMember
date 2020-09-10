@@ -11,7 +11,7 @@
 #import "QXLoginSmsApi.h"
 #import "QXFetchUserInfo.h"
 #import "VIPContrainerController.h"
-
+#import "IncomeDetailController.h"
 
 @interface ViewController ()
 
@@ -82,11 +82,16 @@
 
 - (IBAction)toVIPViewcontroller:(id)sender {
 
-    VIPContrainerController *vipContrainerController = [[VIPContrainerController alloc]
-                                                        initWithNibName:@"VIPContrainerController"
-                                                        bundle:[NSBundle mainBundle]];
-    [self.navigationController pushViewController:vipContrainerController animated:true];
+//    VIPContrainerController *vipContrainerController = [[VIPContrainerController alloc]
+//                                                        initWithNibName:@"VIPContrainerController"
+//                                                        bundle:[NSBundle mainBundle]];
+//    [self.navigationController pushViewController:vipContrainerController animated:true];
 
+    
+    // 收入明细
+    IncomeDetailController *incomeDetailController = [[IncomeDetailController alloc] init];
+    [self.navigationController pushViewController:incomeDetailController animated:YES];
+    
 }
 
 
