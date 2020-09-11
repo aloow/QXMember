@@ -10,8 +10,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TypeSelectView">
             <connections>
                 <outlet property="collectionView" destination="SCC-BD-OV8" id="a9B-2b-fSW"/>
-                <outlet property="timeLabel" destination="kdJ-8N-TWQ" id="Abh-Zb-5cI"/>
-                <outlet property="typeLabel" destination="IOO-HL-KuV" id="Jxb-tG-mWM"/>
+                <outlet property="timeButton" destination="15r-F7-1vF" id="LKo-YA-bba"/>
+                <outlet property="typeButton" destination="1tZ-eo-bFn" id="2dW-xo-Qh4"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -36,48 +36,41 @@
                                 <constraint firstAttribute="height" constant="1" id="91P-69-DSQ"/>
                             </constraints>
                         </view>
-                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="1AS-ab-kjT">
-                            <rect key="frame" x="292" y="12" width="37" height="16"/>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ldD-Ib-N0n">
+                            <rect key="frame" x="0.0" y="1" width="414" height="38"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="类型" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IOO-HL-KuV">
-                                    <rect key="frame" x="0.0" y="0.0" width="27" height="16"/>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="15r-F7-1vF">
+                                    <rect key="frame" x="0.0" y="0.0" width="207" height="38"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vip_Incomedetails_up" translatesAutoresizingMaskIntoConstraints="NO" id="doX-uy-sgM">
-                                    <rect key="frame" x="32" y="6.5" width="5" height="3"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="3" id="f1a-6f-p6H"/>
-                                        <constraint firstAttribute="width" secondItem="doX-uy-sgM" secondAttribute="height" multiplier="5:3" id="jlW-fn-UA1"/>
-                                    </constraints>
-                                </imageView>
-                            </subviews>
-                        </stackView>
-                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="PPj-3s-Ngh">
-                            <rect key="frame" x="85" y="12" width="37" height="16"/>
-                            <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="时间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kdJ-8N-TWQ">
-                                    <rect key="frame" x="0.0" y="0.0" width="27" height="16"/>
+                                    <inset key="titleEdgeInsets" minX="-20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="imageEdgeInsets" minX="60" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <state key="normal" title="时间" image="vip_Incomedetails_up">
+                                        <color key="titleColor" red="0.18039215689999999" green="0.18039215689999999" blue="0.18039215689999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="timeBntTap:" destination="-1" eventType="touchUpInside" id="LZM-bz-j18"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1tZ-eo-bFn">
+                                    <rect key="frame" x="207" y="0.0" width="207" height="38"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                    <color key="textColor" red="0.94347560409999998" green="0.61847656969999998" blue="0.2335387766" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vip_Incomedetails_up" translatesAutoresizingMaskIntoConstraints="NO" id="nqE-Fd-Cvi">
-                                    <rect key="frame" x="32" y="6.5" width="5" height="3"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="3" id="DYm-2t-6NK"/>
-                                        <constraint firstAttribute="width" secondItem="nqE-Fd-Cvi" secondAttribute="height" multiplier="5:3" id="RJi-yY-iAt"/>
-                                    </constraints>
-                                </imageView>
+                                    <inset key="titleEdgeInsets" minX="-20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="imageEdgeInsets" minX="60" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <state key="normal" title="类型" image="vip_Incomedetails_up">
+                                        <color key="titleColor" red="0.1803921568627451" green="0.1803921568627451" blue="0.1803921568627451" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="tpyeBntTap:" destination="-1" eventType="touchUpInside" id="rtI-9B-skG"/>
+                                    </connections>
+                                </button>
                             </subviews>
                         </stackView>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     <constraints>
-                        <constraint firstItem="1AS-ab-kjT" firstAttribute="centerX" secondItem="NVZ-70-jPh" secondAttribute="centerX" multiplier="3/2" id="NSQ-Ij-wRy"/>
-                        <constraint firstItem="PPj-3s-Ngh" firstAttribute="centerY" secondItem="NVZ-70-jPh" secondAttribute="centerY" id="TRH-Ac-lLn"/>
-                        <constraint firstItem="PPj-3s-Ngh" firstAttribute="centerX" secondItem="NVZ-70-jPh" secondAttribute="centerX" multiplier="1/2" id="X0Y-hX-mum"/>
+                        <constraint firstItem="ldD-Ib-N0n" firstAttribute="top" secondItem="6hv-pM-DnE" secondAttribute="bottom" id="2LD-I1-m4I"/>
+                        <constraint firstItem="ldD-Ib-N0n" firstAttribute="leading" secondItem="NVZ-70-jPh" secondAttribute="leading" id="ENz-Jd-faO"/>
+                        <constraint firstItem="G6D-aP-Mp7" firstAttribute="top" secondItem="ldD-Ib-N0n" secondAttribute="bottom" id="NAg-r1-dTQ"/>
                         <constraint firstAttribute="trailing" secondItem="G6D-aP-Mp7" secondAttribute="trailing" id="aEh-gp-vJk"/>
                         <constraint firstAttribute="trailing" secondItem="6hv-pM-DnE" secondAttribute="trailing" id="al3-Oh-qBF"/>
                         <constraint firstItem="6hv-pM-DnE" firstAttribute="top" secondItem="NVZ-70-jPh" secondAttribute="top" id="dgm-n2-EcN"/>
@@ -85,12 +78,12 @@
                         <constraint firstItem="6hv-pM-DnE" firstAttribute="leading" secondItem="NVZ-70-jPh" secondAttribute="leading" id="iUJ-WQ-WG6"/>
                         <constraint firstAttribute="height" constant="40" id="jY7-A4-TC8"/>
                         <constraint firstItem="G6D-aP-Mp7" firstAttribute="leading" secondItem="NVZ-70-jPh" secondAttribute="leading" id="u9S-80-kFk"/>
-                        <constraint firstItem="1AS-ab-kjT" firstAttribute="centerY" secondItem="NVZ-70-jPh" secondAttribute="centerY" id="vJK-iI-cJK"/>
+                        <constraint firstAttribute="trailing" secondItem="ldD-Ib-N0n" secondAttribute="trailing" id="yGq-VZ-XaZ"/>
                     </constraints>
                 </view>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="SCC-BD-OV8">
                     <rect key="frame" x="0.0" y="40" width="414" height="657"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="evb-ua-jF5">
                         <size key="itemSize" width="128" height="128"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>

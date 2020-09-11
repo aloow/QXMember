@@ -63,4 +63,9 @@
  UIViewAutoresizingFlexibleTopMargin      自动调整view与父视图上边距，以保证下边距不变
  UIViewAutoresizingFlexibleHeight         自动调整view的高度，以保证上边距和下边距不变
  UIViewAutoresizingFlexibleBottomMargin   自动调整view与父视图下边距，以保证上边距不变
+ 
+ custome
+ 
+ 
  */
+

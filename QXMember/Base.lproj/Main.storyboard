@@ -701,20 +701,30 @@
             </objects>
             <point key="canvasLocation" x="405.79710144927537" y="928.79464285714278"/>
         </scene>
-        <!--View Controller-->
+        <!--My View Controller-->
         <scene sceneID="dnZ-Id-z6v">
             <objects>
-                <viewController id="XQE-TW-Bu9" sceneMemberID="viewController">
+                <viewController id="XQE-TW-Bu9" customClass="MyViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IBH-Fg-4JU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zRJ-CB-pzb" customClass="MyCustomView">
+                                <rect key="frame" x="87" y="44" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <viewLayoutGuide key="safeArea" id="1ou-Bx-DBJ"/>
                     </view>
+                    <connections>
+                        <outlet property="myView" destination="zRJ-CB-pzb" id="lO3-tB-UMA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tLE-ja-ZZZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1062" y="828"/>
+            <point key="canvasLocation" x="1728" y="820"/>
         </scene>
     </scenes>
     <resources>
